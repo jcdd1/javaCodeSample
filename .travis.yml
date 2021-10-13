@@ -1,3 +1,10 @@
 language: java
 before_install:
   - chmod +x mvnw
+addons:
+    sonarcloud:
+        organization: "loscalidosos"
+        token:
+            secure: 1600056b1537a9cfb9bf1f6df9810c3126488c36
+script:
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
