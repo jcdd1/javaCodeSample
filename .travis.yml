@@ -3,8 +3,8 @@ before_install:
   - chmod +x mvnw
 addons:
     sonarcloud:
-        organization: "loscalidosos"
+        organization: "loscalidosos2021"
         token:
-            secure: 1600056b1537a9cfb9bf1f6df9810c3126488c36
+            secure: 1cb90563935287a3a53d36863034df763f581175
 script:
     - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
