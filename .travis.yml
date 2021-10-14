@@ -3,8 +3,8 @@ before_install:
   - chmod +x mvnw
 addons:
     sonarcloud:
-        organization: "loscalidosos2021"
+        organization: "loscalidosos"
         token:
-            secure: 1cb90563935287a3a53d36863034df763f581175
+            secure: ZEP7csVoZcHkZGlBpDMakccZqSKRX6Ue0pJBPABdMULJ1o9PusMWI6FllmRQ4sjypTgdtdxZ9KdJVYKD1xJez+Fpv5/vm8FVptHhF3+ZchhaWgS0m+JLf318oAvrYZSQ1dsKqQOoGECPkeCxfZfv+A4I/MiMHMGFMqWS/FjS5770MAxdPR2iGHw9MWkfhxanAMAB+3w2PL6h7aum/a3woZZe31jWK6EISdsX7StPPi87Rn5hodLdPoqpic678At0kTMwENRlwwhq7SiB8GgHe9A0rX7NElzz9YYlL5TQHasy2qb891Dvg2ISHYOTs23wlQ5A4qK6LorNP8wQuBLRMFZDXeQHCI063CEFtpFSfWLdxoXNMb9Wn8ibDWKOvuzaoTI5qfMZ8kXr+qpgnnGHX44NIjRMJkm5VDiWytrcE/4LBtAAW/+Y8elmDN/Dpc93ZxFs1ez/W5i0Q7lL0YF/5Ur6gUWeNvyl4/SyHOOMylFZx8E+hQoEqOB8KYG9A88OpxmCbi+fnxFUDNexPHHPi2FhMUO5aRde4TVErlVwRqvw/Mt/BihFWFfS49M7WqsMFetwUcuYobOMxKRd0PRBWU76j3ge/HZZjf+proeUSrvv/qz9EGwcV3VPQ8hc3KdUsXwh7jwU7P+BZK9W5WYO1NGfjh6JZJhrBIg+K5pbbQk=
 script:
     - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
